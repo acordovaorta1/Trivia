@@ -1,7 +1,7 @@
 import requests
 
 def trivia_fetch(num):
-    url = "https://opentdb.com/api.php?amount=" + str(num)
+    url = f"https://opentdb.com/api.php?amount={num}" 
     response = requests.get(url)
     trivia = response.json()
     return trivia
