@@ -14,7 +14,9 @@ def main():
 
     cantidad = int(input("¿Cuántas preguntas quieres? "))
     trivia = trivia_fetch(cantidad)
-    print(trivia)
+
+    for pregunta in trivia ["results"]:
+        print(pregunta["question"])
     
 
 if __name__=="__main__":
